@@ -15,3 +15,26 @@ LAW:
 - proper form\
 **promissory estoppel: contract based on verbal promises. Normally a contract can be considered promissory if the promised has already taken drastic actions based on the promise of the person who made the promise 
 ------------------------------------------------------------------------------------
+DNS
+1. what it is
+- domain name service
+- a system to translate domain names to ip addresses
+- ip addresses are octets (series of 8 numbers)
+2. ip addresses
+- classless ip addresses: 0.0.0.0 to 255.255.255.255 ( 0 to (28)4) -> too small number
+-> public and private ips
+- public ips are ips that everyone can see 
+- private ips are ips that only devices in the same network can see
+Hst17.com        97.74.93.87     01100001. 01001010. 01011101. 01010111
+->>>>> translation : done by DNS
+
+3. layers of DNS
+- local machine
+- router
+- isp (internet service provider: vnpt, fpt, Viettel…) - google dns
+- regional dns
+- root dns
+
+**all the ip translations are kept by the dns records stored in each level
+
+ipconfig /flushdns

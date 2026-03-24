@@ -38,3 +38,40 @@ Hst17.com        97.74.93.87     01100001. 01001010. 01011101. 01010111
 **all the ip translations are kept by the dns records stored in each level
 
 ipconfig /flushdns
+------------------------------------------------------------------------------------------------------------------
+/var/www/
+│
+├── project1/
+│   ├── app/                # Django project root
+│   ├── venv/               # isolated Python env
+│   ├── logs/
+│   ├── run/                # gunicorn socket
+│   └── .env                # secrets
+│
+├── project2/
+│   ├── app/
+│   ├── venv/
+│   ├── logs/
+│   ├── run/
+│   └── .env
+│
+└── shared/
+    ├── static/             # optional shared CDN-like
+    └── backups/
+
+
+
+
+Internal structure
+app/
+├── manage.py
+├── config/                # settings module
+│   ├── settings.py
+│   ├── urls.py
+│   └── asgi.py
+│
+├── apps/                  # modular apps
+├── templates/
+├── static/
+└── requirements.txt
+----------------------------------------------------------------------------------------------
